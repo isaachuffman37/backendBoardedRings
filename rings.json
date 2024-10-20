@@ -1,0 +1,58 @@
+[
+        {
+            "Name": "Beach Bum", 
+            "colors": ["blue", "green", "yellow"],  
+            "description": "Natural wood ring with subtle grain texture",
+            "sizes": ["7", "8", "9", "10", "11", "12"],
+            "width": "6mm",
+            "price": 23.99
+        },
+        {
+            "Name": "Midnight Sky", 
+            "colors": ["black", "silver", "gray"],  
+            "description": "Dark titanium ring with a sleek matte finish",
+            "sizes": ["8", "9", "10", "11", "12"],
+            "width": "8mm",
+            "price": 29.99
+        },
+        {
+            "Name": "Ocean Breeze", 
+            "colors": ["aqua", "teal", "white"],  
+            "description": "Ceramic ring with a wave-inspired design",
+            "sizes": ["7", "8", "9", "10"],
+            "width": "7mm",
+            "price": 24.50
+        },
+        {
+            "Name": "Mountain Peak", 
+            "colors": ["green", "brown", "black"],  
+            "description": "Tungsten carbide ring with a forest motif",
+            "sizes": ["9", "10", "11", "12", "13"],
+            "width": "6mm",
+            "price": 35.75
+        },
+        {
+            "Name": "Sunset Glow", 
+            "colors": ["orange", "red", "yellow"],  
+            "description": "Brushed copper ring with a sunset gradient",
+            "sizes": ["7", "8", "9", "10", "11"],
+            "width": "5mm",
+            "price": 27.99
+        },
+        {
+            "Name": "Starlight", 
+            "colors": ["blue", "purple", "silver"],  
+            "description": "Stainless steel ring with a starry night pattern",
+            "sizes": ["6", "7", "8", "9"],
+            "width": "4mm",
+            "price": 22.45
+        },
+        {
+            "Name": "Forest Whisper", 
+            "colors": ["green", "brown", "gold"],  
+            "description": "Wood inlay ring with a nature-inspired design",
+            "sizes": ["8", "9", "10", "11", "12"],
+            "width": "7mm",
+            "price": 31.99
+        }
+]
