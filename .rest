@@ -1,1 +1,13 @@
-GET http://localhost:2000/rings HTTP/1.1
+GET http://localhost:8080/rings HTTP/1.1
+
+###
+
+POST http://localhost:8080/buyer HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Sugy",
+    "lastName": "Spice",
+    "email": "suice@gmail.com",
+    "phoneNumber": "435-123-5432"
+}
