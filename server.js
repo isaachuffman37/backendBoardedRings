@@ -17,10 +17,11 @@ mongodb.connectDb((err, mongodb) => {
   }
 });
 
-app.use(bodyParser.json())
-.use((req, res, next) => {
+app
+  .use(bodyParser.json())
+  .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
-    })
-    .use('/', routes)
-    .use('/api-doc', swaggerUI.serve, swaggerUI.setup(swaggerFile))
+  })
+  .use('/', routes)
+  .use('/api-doc', swaggerUI.serve, swaggerUI.setup(swaggerFile));
