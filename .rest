@@ -41,3 +41,14 @@ content-type: application/json
     "email": null,
     "phoneNumber": "510-570-7677"
 }
+
+###
+DELETE https://backendboardedrings.onrender.com/rings/671c77dfc53b0b7b5b20654 HTTP/1.1
+
+###
+PUT https://backendboardedrings.onrender.com/buyer/6710a1b0becaf5d3fbf708cc HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Coag1"
+}
