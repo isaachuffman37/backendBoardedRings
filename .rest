@@ -9,5 +9,35 @@ content-type: application/json
     "firstName": "Sugy",
     "lastName": "Spice",
     "email": "suice@gmail.com",
-    "phoneNumber": "435-123-5432"
+    "phoneNumber": "510-570-7677"
+}
+
+###
+
+DELETE http://localhost:8080/rings/671c77dfc53b0b7b5b20654 HTTP/1.1
+###
+
+PUT http://localhost:8080/buyer/6710a1b0becaf5d3fbf708cc HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Coag1"
+}
+
+###
+
+
+# REQUESTS ON RENDER
+
+GET https://backendboardedrings.onrender.com/rings HTTP/1.1
+
+###
+POST https://backendboardedrings.onrender.com/buyer HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": null,
+    "lastName": "Spicey",
+    "email": null,
+    "phoneNumber": "510-570-7677"
 }

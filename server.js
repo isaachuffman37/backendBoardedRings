@@ -5,7 +5,9 @@ const mongodb = require('./db/connect');
 const swaggerUI = require('swagger-ui-express');
 const routes = require('./routes/index');
 const swaggerFile = require('./swagger-output.json');
+const createError = require('http-errors')
 const port = process.env.PORT || 8080;
+
 
 mongodb.connectDb((err, mongodb) => {
   if (err) {
@@ -24,4 +26,16 @@ app
     next();
   })
   .use('/', routes)
-  .use('/api-doc', swaggerUI.serve, swaggerUI.setup(swaggerFile));
+  .use('/api-doc', swaggerUI.serve, swaggerUI.setup(swaggerFile))
+  .use((reg, res, next)=> {
+    next(createError(404, 'Not Found'))
+  })
+  .use((err, req, res, next) => {
+    res.status(err.status || 500);
+    res.send({
+      error:{
+        status: err.status || 500,
+        message: err.message
+      }
+    })
+  });

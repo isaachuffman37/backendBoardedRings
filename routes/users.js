@@ -1,8 +1,8 @@
 const routes = require('express').Router();
 const controller = require('../controllers');
+const { buyerValidationRules, buyerPutValidationRules, validate } = require('../validator.js')
 
-routes.post('/buyer', controller.insertOneBuyer);
-routes.delete('/buyer/delete', controller.deleteOneBuyer);
-routes.put('/buyer/change', controller.changeOneBuyer);
+routes.post('/buyer', buyerValidationRules(), validate, controller.insertOneBuyer);
+routes.put('/buyer/:id',buyerPutValidationRules(), validate, controller.changeOneBuyer);
 
 module.exports = routes;
