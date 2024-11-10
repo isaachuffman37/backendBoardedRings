@@ -1,0 +1,20 @@
+<h2>Welcome to Boarded Rings {{name}}!</h2>
+<h3>We hope you enjoy browsing our rings below</h3>
+
+{{#if rings}}
+
+    {{#each rings}}
+        <div>
+            <h4>{{Name}}</h4>
+            <ul>
+                <li>{{description}}</li>
+            </ul>
+        </div>
+    {{/each}}
+
+
+{{else}}
+    <p>There are no rings in stock</p>
+{{/if}}
+
+

@@ -107,6 +107,19 @@ async function deleteOneRing(req, res, next) {
   }
 }
 
+async function getOneUser(req, res, next) {
+  const contactId = req.params.id;
+  await mongodb
+    .getMongoDb()
+    .db('boardedRings')
+    .collection('users')
+    .findOne({ _id: new ObjectId(contactId) })
+    .then((contact) => {
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(contact);
+    });
+}
+
 module.exports = {
   getAllRings,
   insertOneBuyer,
